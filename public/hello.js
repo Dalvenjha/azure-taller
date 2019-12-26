@@ -9,8 +9,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $.ajax({
-        url: "http://52.141.219.120/products/api/products",
-        headers: { 'Ocp-Apim-Subscription-Key': '9db32e4fed844af0aac4537ed2f784c8;product=unlimited' }
+        url: "http://52.149.174.73/api/products/api/products",
+        headers: { 'Ocp-Apim-Subscription-Key': 'd00a7719e1034fb3b892d2df531a6fc8;product=unlimited' }
     }).then(function(data) {
        $('.productos').append(data[Math.floor(Math.random()*3)]);
     });
